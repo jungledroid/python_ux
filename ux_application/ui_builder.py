@@ -3,12 +3,12 @@
 from tkinter import *
 
 def buildCommandMenu(bar):
-    cmdBtn = Menubutton(bar,text="Button Commands",underline=0)
+    cmdBtn = Menubutton(bar,text="File",underline=2)
     cmdBtn.pack(side=LEFT,padx="2m")
     cmdBtn.menu = Menu(cmdBtn)
-    cmdBtn.menu.add_command(label="undo")
-    cmdBtn.menu.entryconfig(0,state=DISABLED)
-    cmdBtn.menu.add_command(label="new file")
+    cmdBtn.menu.add_command(label="New Project...")
+    cmdBtn.menu.entryconfig(0)
+    cmdBtn.menu.add_command(label="New...",background='white',activebackground='green')
     cmdBtn.menu.entryconfig(1, state=DISABLED)
 
 

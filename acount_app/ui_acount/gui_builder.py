@@ -19,6 +19,7 @@ class AccountContentBuilder:
         self.listview.pack(fill=BOTH)
 
         self.values = self.sqliteController.queryAll()
+        # self.values=[]
         self.fillContent(self.values)
 
         frameBottom = Frame(frame)

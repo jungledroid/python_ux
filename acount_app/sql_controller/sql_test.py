@@ -6,7 +6,7 @@ class SqliteContoller:
         pass
 
     def queryAll(self):
-        conn = sqlite3.connect("../private.sqlite3")
+        conn = sqlite3.connect("private.sqlite3")
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM count")
         values = cursor.fetchall()
